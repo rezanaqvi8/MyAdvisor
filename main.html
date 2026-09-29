@@ -18,16 +18,23 @@
     </header>
 
     <main>
-
         <section>
+            <h2>What college do you attend?</h2>
+
+            <label for="school">College: </label>
+
+            <select id="school">
+                <option value="" selected disabled>Select a college...</option>
+                <option value="furman">Furman University</option>
+            </select>
+        </section>
+
+        <section id="semesterSection" hidden>
             <h2>Add a Semester</h2>
 
             <label for="termSelect">Term:</label>
             <select id="termSelect">
-                <option value="Fall">Fall</option>
-                <option value="Spring">Spring</option>
-                <option value="MayX">MayX</option>
-                <option value="Summer">Summer</option>
+                <option value="" selected disabled>Select a term...</option>
             </select>
 
             <label for="yearInput">Year:</label>
@@ -40,7 +47,7 @@
             <button id="addSemesterButton">Add Semester</button>
         </section>
 
-        <section>
+        <section id="plan" hidden>
             <h2>Your Plan</h2>
 
             <div id="semesterList">

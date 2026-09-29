@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Mobile optimizations-->
+
+    <title>MyAdvisor</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>MyAdvisor</h1>
+        <p>Plan your semesters and track your major requirements.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Add a Semester</h2>
+
+            <label for="termSelect">Term:</label>
+            <select id="termSelect">
+                <option value="Fall">Fall</option>
+                <option value="Spring">Spring</option>
+                <option value="MayX">MayX</option>
+                <option value="Summer">Summer</option>
+            </select>
+
+            <label for="yearInput">Year:</label>
+            <input
+                type="number"
+                id="yearInput"
+                min="2020"
+            >
+
+            <button id="addSemesterButton">Add Semester</button>
+        </section>
+
+        <section>
+            <h2>Your Plan</h2>
+
+            <div id="semesterList">
+                <p>No semesters added yet.</p>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

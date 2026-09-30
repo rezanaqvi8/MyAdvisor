@@ -48,7 +48,7 @@ function loadTerms(school) {
 
 function loadMajors(school) {
 
-    termSelect.innerHTML = `
+    majorSelection.innerHTML = `
         <option value="" selected disabled>Select a major...</option>
     `;
 
@@ -81,8 +81,6 @@ schoolSelect.addEventListener("change", function () {
     //Makes sure sections stay hidden even when school is selected. Major must be selected until this shows up.
     semesterSection.hidden = true;
     planSection.hidden = true;
-
-    majorSelection.value = "";
 
     loadMajors(school);
     loadTerms(school);

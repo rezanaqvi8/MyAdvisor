@@ -63,8 +63,8 @@ addSemesterButton.addEventListener("click", function () {
         return;
     }
 
-    if (year < 2020) {
-        alert("Please enter a year of 2020 or later.");
+    if (year < 1975) {
+        alert("Please enter a year of 1975 or later.");
         return;
     }
 

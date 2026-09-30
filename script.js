@@ -28,6 +28,16 @@ const schools = {
     }
 }
 
+let courseCatalog = [];
+
+async function loadPoliticsCourses() {
+    const response = await fetch("data/furmanPol.json");
+
+    courseCatalog = await response.json();
+
+    console.log("Loaded POL courses:", courseCatalog);
+}
+
 function loadTerms(school) {
     termSelect.innerHTML = `
         <option value="" selected disabled>Select a term...</option>
@@ -86,7 +96,7 @@ schoolSelect.addEventListener("change", function () {
     loadTerms(school);
 });
 
-majorSelection.addEventListener("change", function () {
+majorSelection.addEventListener("change", async function () {
 
     const major = majorSelection.value;
 
@@ -94,6 +104,10 @@ majorSelection.addEventListener("change", function () {
         semesterSection.hidden = true;
         planSection.hidden = true;
         return;
+    }
+
+    if (major === "pol") {
+        await loadPoliticsCourses();
     }
 
     semesterSection.hidden = false;
@@ -164,9 +178,135 @@ function displaySemesters() {
 
         semesterBox.innerHTML = `
             <h3>${semester.term} ${semester.year}</h3>
-            <p>No Courses Found.</p>
+            <div class="courses"></div>
+
+            <label>Add Course:</label>
+
+            <select class="courseSelect">
+                <option value="" selected disabled>
+                    Select a course...
+                </option>
+            </select>
+
+            <button class="addCourseButton">
+                Add Course
+            </button>
         `;
 
         semesterList.appendChild(semesterBox);
+
+        const courseSelect = semesterBox.querySelector(".courseSelect");
+
+        const addCourseButton = semesterBox.querySelector(".addCourseButton");
+
+        const coursesDisplay = semesterBox.querySelector(".courses");
+
+        loadCourseOptions(courseSelect, semester);
+
+        displayCourses(semester, coursesDisplay);
+
+        addCourseButton.addEventListener("click", function () {
+
+            addCourseToSemester(
+                semester,
+                courseSelect.value
+            );
+        });
+    }
+}
+
+function loadCourseOptions(courseSelect, semester) {
+
+    for (let i = 0; i < courseCatalog.length; i++) {
+
+        const course = courseCatalog[i];
+
+        const option = document.createElement("option");
+
+        option.value = course.code;
+
+        option.textContent = `${course.code} - ${course.name}`;
+
+        courseSelect.appendChild(option);
+    }
+}
+
+function addCourseToSemester(semester, courseCode) {
+
+    if (courseCode === "") {
+        alert("Please select a course.");
+        return;
+    }
+
+    const course = courseCatalog.find(function(course) {
+        return course.code === courseCode;
+    });
+
+    if (!course) {
+        alert("Course could not be found.");
+        return;
+    }
+
+    // Check term restrictions
+    if (
+        course.allowedTerms.length > 0 &&
+        !course.allowedTerms.includes(semester.term)
+    ) {
+        alert(
+            `${course.code} can only be taken during ${course.allowedTerms.join(", ")}.`
+        );
+
+        return;
+    }
+
+    // Prevent duplicate course in same semester
+    if (semester.courses.includes(courseCode)) {
+        alert("That course is already in this semester.");
+        return;
+    }
+
+    semester.courses.push(courseCode);
+
+    displaySemesters();
+}
+
+function displayCourses(semester, coursesDisplay) {
+
+    if (semester.courses.length === 0) {
+        coursesDisplay.innerHTML =
+            "<p>No Courses Found.</p>";
+
+        return;
+    }
+
+    coursesDisplay.innerHTML = "";
+
+    for (let i = 0; i < semester.courses.length; i++) {
+
+        const courseCode = semester.courses[i];
+
+        const course = courseCatalog.find(function(course) {
+            return course.code === courseCode;
+        });
+
+        if (!course) {
+            continue;
+        }
+
+        const courseElement =
+            document.createElement("p");
+
+        let creditText;
+
+        if (course.credits === null) {
+            creditText = "Variable Credits";
+        } else {
+            creditText = `${course.credits} Credits`;
+        }
+
+        courseElement.textContent =
+            `${course.code} - ${course.name} (${creditText})`;
+
+        coursesDisplay.appendChild(courseElement);
     }
 }

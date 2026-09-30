@@ -1,0 +1,622 @@
+[
+    {
+        "code": "POL-101",
+        "name": "Introduction to American Government",
+        "area": "Introductory Courses",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-102",
+        "name": "Introduction to World Politics",
+        "area": "Introductory Courses",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-103",
+        "name": "Introduction to Political Thought",
+        "area": "Introductory Courses",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-150",
+        "name": "Introduction to Political Analysis",
+        "area": "Introductory Courses",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-200",
+        "name": "Native American Politics",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-201",
+        "name": "Immigration Law and Policy",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-202",
+        "name": "American Presidency",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-203",
+        "name": "Judicial Processes and United States Supreme Court",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-204",
+        "name": "Civil Rights and the United States Constitution",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-205",
+        "name": "Public Policy in the United States",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-206",
+        "name": "Law and Public Policy",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-207",
+        "name": "State Politics",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-208",
+        "name": "Urban Politics",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-209",
+        "name": "Southern Politics",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-210",
+        "name": "Interest Groups and Political Movements",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-211",
+        "name": "Racial and Ethnic Politics",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-212",
+        "name": "Women and Politics",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-213",
+        "name": "Environmental Policy",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-214",
+        "name": "Environmental Law",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-215",
+        "name": "Public Administration",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-216",
+        "name": "Campaigns and Elections",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-217",
+        "name": "Pursuing Justice: The Fight to Kill Jim Crow",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-218",
+        "name": "Healthcare, Public Policy, & Law",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-219",
+        "name": "Crime and Policing",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-274",
+        "name": "Black Political Thought",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-290",
+        "name": "Civil Discourse",
+        "area": "American Politics",
+        "credits": 2,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-301",
+        "name": "American Congress",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-304",
+        "name": "Jurisprudence, Law, and Ethics",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-315",
+        "name": "Media and Politics",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-317",
+        "name": "Political Behavior",
+        "area": "American Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-220",
+        "name": "Political Psychology",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-221",
+        "name": "Politics of European Union",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-222",
+        "name": "Politics of Russia",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-223",
+        "name": "Politics of Developing Nations",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-224",
+        "name": "Politics of Africa",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-225",
+        "name": "Politics of the Middle East",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-226",
+        "name": "Politics of China",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-227",
+        "name": "Environmental Politics in China",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-228",
+        "name": "Politics of Europe",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-229",
+        "name": "Politics of Asia",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-230",
+        "name": "Politics of Latin America",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-231",
+        "name": "Democratization in the Mediterranean",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-232",
+        "name": "Islam and Politics",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-235",
+        "name": "Politics of Religious Movements",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-236",
+        "name": "Political Parties",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-238",
+        "name": "Authoritarianism",
+        "area": "Comparative Politics",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-250",
+        "name": "International Relations",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-251",
+        "name": "International Peace and Security",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-252",
+        "name": "American Foreign Policy",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-253",
+        "name": "Great Power Conflict",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-254",
+        "name": "Foreign Policy Analysis",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-255",
+        "name": "Understanding Terrorism",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-256",
+        "name": "Politics of the Global Economy",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-257",
+        "name": "International Law and Human Rights",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-258",
+        "name": "International Organization",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-259",
+        "name": "The Arab-Israeli Conflict",
+        "area": "International Relations",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-270",
+        "name": "Classical Political Thought",
+        "area": "Political Thought",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-271",
+        "name": "Medieval Christian and Islamic Political Thought",
+        "area": "Political Thought",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-272",
+        "name": "Modern Political Thought",
+        "area": "Political Thought",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-273",
+        "name": "American Political Thought",
+        "area": "Political Thought",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-278",
+        "name": "Readings in Political Thought",
+        "area": "Political Thought",
+        "credits": 2,
+        "allowedTerms": [
+            "MayX"
+        ]
+    },
+    {
+        "code": "POL-375",
+        "name": "Issues in Political Thought",
+        "area": "Political Thought",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-405",
+        "name": "Fieldwork in Politics",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-406",
+        "name": "Fieldwork in State and Local Public Affairs",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-407",
+        "name": "Washington Experience",
+        "area": "Engaged Learning",
+        "credits": 8,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-408",
+        "name": "Brussels Experience",
+        "area": "Engaged Learning",
+        "credits": null,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-409",
+        "name": "Fieldwork in State Legislatures",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-411",
+        "name": "Mediation and Conflict Resolution",
+        "area": "Engaged Learning",
+        "credits": 2,
+        "allowedTerms": [
+            "MayX"
+        ]
+    },
+    {
+        "code": "POL-412",
+        "name": "Trial Advocacy",
+        "area": "Engaged Learning",
+        "credits": 2,
+        "allowedTerms": [
+            "MayX"
+        ]
+    },
+    {
+        "code": "POL-413",
+        "name": "Conservation and Renewable Energy",
+        "area": "Engaged Learning",
+        "credits": 2,
+        "allowedTerms": [
+            "MayX"
+        ]
+    },
+    {
+        "code": "POL-415",
+        "name": "Poverty and the Law",
+        "area": "Engaged Learning",
+        "credits": 2,
+        "allowedTerms": [
+            "MayX"
+        ]
+    },
+    {
+        "code": "POL-416",
+        "name": "Farm",
+        "area": "Engaged Learning",
+        "credits": 2,
+        "allowedTerms": [
+            "MayX"
+        ]
+    },
+    {
+        "code": "POL-417",
+        "name": "Politics & National Integration in Ireland",
+        "area": "Engaged Learning",
+        "credits": 2,
+        "allowedTerms": [
+            "MayX"
+        ]
+    },
+    {
+        "code": "POL-418",
+        "name": "Democracy the Scandinavian Way",
+        "area": "Engaged Learning",
+        "credits": 2,
+        "allowedTerms": [
+            "MayX"
+        ]
+    },
+    {
+        "code": "POL-419",
+        "name": "Welfare States in America and Scandinavia",
+        "area": "Engaged Learning",
+        "credits": 2,
+        "allowedTerms": [
+            "MayX"
+        ]
+    },
+    {
+        "code": "POL-422",
+        "name": "South Carolina Politics and Policy",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-423",
+        "name": "The European Union in Theory",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-424",
+        "name": "The European Union in Practice",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-440",
+        "name": "Economics and Political Analysis of the European Union",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-441",
+        "name": "Issues in Central and Eastern European Politics",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-442",
+        "name": "Issues in African Politics",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-443",
+        "name": "Issues in Chinese Politics",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-444",
+        "name": "Issues in Latin American Politics",
+        "area": "Engaged Learning",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-370",
+        "name": "Capstone Seminar in Politics",
+        "area": "Seminars and Individualized Instruction",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-371",
+        "name": "Senior Research Seminar",
+        "area": "Seminars and Individualized Instruction",
+        "credits": 4,
+        "allowedTerms": []
+    },
+    {
+        "code": "POL-504",
+        "name": "Directed Independent Study",
+        "area": "Seminars and Individualized Instruction",
+        "credits": null,
+        "allowedTerms": []
+    }
+]

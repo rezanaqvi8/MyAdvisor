@@ -1,18 +1,33 @@
 const schoolSelect = document.getElementById("school");
+const majorSelection = document.getElementById("majorSelect");
+const majorSection = document.getElementById("majorSection");
+
 const semesterSection = document.getElementById("semesterSection")
 const termSelect = document.getElementById("termSelect");
 const yearInput = document.getElementById("yearInput");
+
 const addSemesterButton = document.getElementById("addSemesterButton");
 const planSection = document.getElementById("plan");
 const semesterList = document.getElementById("semesterList");
 
+
 schoolSelect.value = "";
+
 
 const schools = {
     furman: {
-        terms: ["Spring", "MayX", "Summer I", "Summer II", "Summer", "Fall"]
+        terms: ["Spring", "MayX", "Summer I", "Summer II", "Summer", "Fall"],
+
+        programs: [
+            {
+                id: "pol",
+                name: "Politics & International Affairs, B.A.",
+                coursePrefixes: ["POL"]
+            }
+        ]
     }
 }
+
 function loadTerms(school) {
     termSelect.innerHTML = `
         <option value="" selected disabled>Select a term...</option>
@@ -30,6 +45,26 @@ function loadTerms(school) {
 
     }
 }
+
+function loadMajors(school) {
+
+    termSelect.innerHTML = `
+        <option value="" selected disabled>Select a major...</option>
+    `;
+
+    const programs = schools[school].programs;
+
+    for(let i = 0; i < programs.length; i++) {
+        const option = document.createElement("option");
+
+        option.value = programs[i].id;
+        option.textContent = programs[i].name;
+
+        majorSelection.appendChild(option);
+    }
+
+}
+
 schoolSelect.addEventListener("change", function () {
 
     const school = schoolSelect.value;
@@ -37,12 +72,34 @@ schoolSelect.addEventListener("change", function () {
     if(school === "") {
         semesterSection.hidden = true;
         planSection.hidden = true;
+        majorSection.hidden = true;
+        return;
+    }
+
+    majorSection.hidden = false;
+
+    //Makes sure sections stay hidden even when school is selected. Major must be selected until this shows up.
+    semesterSection.hidden = true;
+    planSection.hidden = true;
+
+    majorSelection.value = "";
+
+    loadMajors(school);
+    loadTerms(school);
+});
+
+majorSelection.addEventListener("change", function () {
+
+    const major = majorSelection.value;
+
+    if (major === "") {
+        semesterSection.hidden = true;
+        planSection.hidden = true;
         return;
     }
 
     semesterSection.hidden = false;
     planSection.hidden = false;
-    loadTerms(school);
 });
 
 yearInput.value = "";
@@ -51,20 +108,21 @@ let semesters = [];
 
 addSemesterButton.addEventListener("click", function () {
     const term = termSelect.value; 
-    const year = Number(yearInput.value);
 
     if(term === "") {
         alert("Please select a term.")
         return;
     }
 
-    if (year === "") {
+    if (yearInput.value === "") {
         alert("Please enter a year.");
         return;
     }
 
-    if (year < 1975) {
-        alert("Please enter a year of 1975 or later.");
+    const year = Number(yearInput.value);
+
+    if (year < 1990) {
+        alert("Please enter a year of 1990 or later.");
         return;
     }
 

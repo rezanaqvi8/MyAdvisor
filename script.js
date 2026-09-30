@@ -247,15 +247,15 @@ function addCourseToSemester(semester, courseCode) {
         return;
     }
 
-    // Check term restrictions
-    if (
-        course.allowedTerms.length > 0 &&
-        !course.allowedTerms.includes(semester.term)
-    ) {
-        alert(
-            `${course.code} can only be taken during ${course.allowedTerms.join(", ")}.`
-        );
+    if (semester.term === "MayX" && !course.allowedTerms.includes("MayX")) {
+        alert(`${course.code} is not a MayX course.`);
+        return
+    }
 
+    // Check term restrictions
+    if (course.allowedTerms.length > 0 && !course.allowedTerms.includes(semester.term)) {
+
+        alert(`${course.code} can only be taken during ${course.allowedTerms.join(", ")}.`);
         return;
     }
 
